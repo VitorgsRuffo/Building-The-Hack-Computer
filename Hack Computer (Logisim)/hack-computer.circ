@@ -207,121 +207,6 @@
     <wire from="(1320,750)" to="(1320,790)"/>
     <wire from="(460,130)" to="(850,130)"/>
     <wire from="(1280,430)" to="(1620,430)"/>
-    <comp lib="0" loc="(1030,260)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(910,910)" name="Constant">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="6" loc="(945,47)" name="Text">
-      <a name="text" val="Hack Central Processing Unit"/>
-      <a name="font" val="SansSerif plain 32"/>
-    </comp>
-    <comp lib="6" loc="(725,497)" name="Text">
-      <a name="text" val="A-Register"/>
-      <a name="font" val="SansSerif plain 18"/>
-    </comp>
-    <comp lib="0" loc="(1120,200)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="6"/>
-      <a name="incoming" val="6"/>
-    </comp>
-    <comp lib="0" loc="(150,420)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Instruction"/>
-    </comp>
-    <comp lib="1" loc="(1400,750)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(150,560)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="InM"/>
-    </comp>
-    <comp lib="1" loc="(1330,630)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="9" loc="(800,450)" name="16-bit Register"/>
-    <comp lib="0" loc="(1620,430)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="label" val="OutM"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(190,370)" name="Splitter">
-      <a name="fanout" val="16"/>
-      <a name="incoming" val="16"/>
-    </comp>
-    <comp lib="1" loc="(1250,630)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(350,260)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="6"/>
-      <a name="incoming" val="6"/>
-    </comp>
-    <comp lib="0" loc="(1570,600)" name="Constant">
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="7" loc="(730,380)" name="Multiplexor">
-      <a name="facing" val="south"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="1" loc="(1410,630)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(1410,950)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="16"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="1"/>
-      <a name="bit8" val="1"/>
-      <a name="bit9" val="1"/>
-      <a name="bit10" val="1"/>
-      <a name="bit11" val="2"/>
-      <a name="bit12" val="2"/>
-      <a name="bit13" val="2"/>
-      <a name="bit14" val="2"/>
-      <a name="bit15" val="2"/>
-    </comp>
-    <comp lib="9" loc="(1030,950)" name="Program Counter"/>
-    <comp lib="1" loc="(1240,530)" name="NOT Gate">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(1610,820)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="6"/>
-      <a name="label" val="AddressM"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1070,850)" name="Constant">
-      <a name="facing" val="west"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(1680,630)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="WriteM"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(960,70)" name="Clock"/>
     <comp lib="0" loc="(1490,850)" name="Splitter">
       <a name="fanout" val="3"/>
       <a name="incoming" val="16"/>
@@ -341,32 +226,65 @@
       <a name="bit14" val="2"/>
       <a name="bit15" val="2"/>
     </comp>
-    <comp lib="7" loc="(1000,340)" name="Multiplexor">
-      <a name="facing" val="south"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="7" loc="(1640,630)" name="Multiplexor">
-      <a name="labelloc" val="south"/>
-    </comp>
     <comp lib="1" loc="(1090,790)" name="OR Gate">
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="7" loc="(580,450)" name="16-bit Multiplexor"/>
-    <comp lib="1" loc="(1320,750)" name="AND Gate">
+    <comp lib="9" loc="(1030,950)" name="Program Counter"/>
+    <comp lib="0" loc="(1030,260)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1570,600)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="1" loc="(1400,750)" name="AND Gate">
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="9" loc="(1070,380)" name="16-bit Register"/>
+    <comp lib="0" loc="(1120,200)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="1" loc="(1240,530)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(1290,580)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(1330,630)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="8" loc="(1200,430)" name="ALU"/>
     <comp lib="0" loc="(110,880)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="Reset"/>
     </comp>
+    <comp lib="0" loc="(150,420)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Instruction"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="7" loc="(1000,340)" name="Multiplexor">
+      <a name="facing" val="south"/>
+      <a name="labelloc" val="south"/>
+    </comp>
     <comp lib="7" loc="(970,820)" name="Multiplexor">
       <a name="facing" val="west"/>
       <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="7" loc="(1640,630)" name="Multiplexor">
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="6" loc="(945,47)" name="Text">
+      <a name="text" val="Hack Central Processing Unit"/>
+      <a name="font" val="SansSerif plain 32"/>
     </comp>
     <comp lib="0" loc="(1610,920)" name="Pin">
       <a name="facing" val="west"/>
@@ -375,23 +293,107 @@
       <a name="label" val="PC"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(1240,750)" name="AND Gate">
+    <comp lib="6" loc="(725,497)" name="Text">
+      <a name="text" val="A-Register"/>
+      <a name="font" val="SansSerif plain 18"/>
+    </comp>
+    <comp lib="0" loc="(1620,430)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="label" val="OutM"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(960,70)" name="Clock"/>
+    <comp lib="1" loc="(1250,630)" name="AND Gate">
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="7" loc="(1040,480)" name="16-bit Multiplexor"/>
-    <comp lib="1" loc="(1290,580)" name="NOT Gate">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(760,300)" name="Constant">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(150,560)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="InM"/>
+      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="6" loc="(997,418)" name="Text">
       <a name="text" val="D-Register"/>
       <a name="font" val="SansSerif plain 18"/>
     </comp>
-    <comp lib="8" loc="(1200,430)" name="ALU"/>
+    <comp lib="7" loc="(1040,480)" name="16-bit Multiplexor"/>
+    <comp lib="0" loc="(1610,820)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="6"/>
+      <a name="label" val="AddressM"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(1240,750)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="9" loc="(800,450)" name="16-bit Register"/>
+    <comp lib="0" loc="(190,370)" name="Splitter">
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="1" loc="(1410,630)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1680,630)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="WriteM"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="9" loc="(1070,380)" name="16-bit Register"/>
+    <comp lib="0" loc="(1410,950)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="16"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="2"/>
+      <a name="bit12" val="2"/>
+      <a name="bit13" val="2"/>
+      <a name="bit14" val="2"/>
+      <a name="bit15" val="2"/>
+    </comp>
+    <comp lib="0" loc="(760,300)" name="Constant">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(910,910)" name="Constant">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="7" loc="(580,450)" name="16-bit Multiplexor"/>
+    <comp lib="1" loc="(1320,750)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(350,260)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="7" loc="(730,380)" name="Multiplexor">
+      <a name="facing" val="south"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(1070,850)" name="Constant">
+      <a name="facing" val="west"/>
+      <a name="value" val="0x0"/>
+    </comp>
   </circuit>
   <circuit name="Hack Computer">
     <a name="circuit" val="Hack Computer"/>
@@ -424,26 +426,12 @@
     <wire from="(370,350)" to="(410,350)"/>
     <wire from="(370,330)" to="(410,330)"/>
     <comp lib="9" loc="(740,320)" name="RAM64"/>
-    <comp lib="6" loc="(27,191)" name="Text">
-      <a name="text" val="0004"/>
-    </comp>
-    <comp lib="6" loc="(180,87)" name="Text">
-      <a name="text" val="Test program - Loading value 10 into RAM's 6th register:"/>
-    </comp>
-    <comp lib="6" loc="(158,107)" name="Text">
-      <a name="text" val="Obs: load this into the ROM chip."/>
-    </comp>
-    <comp lib="6" loc="(28,209)" name="Text">
-      <a name="text" val="EA87"/>
-    </comp>
-    <comp loc="(530,300)" name="CPU"/>
-    <comp lib="6" loc="(28,121)" name="Text">
-      <a name="text" val="000A"/>
-    </comp>
-    <comp lib="0" loc="(480,440)" name="Clock"/>
-    <comp lib="0" loc="(370,550)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
+    <comp lib="4" loc="(290,310)" name="ROM">
+      <a name="addrWidth" val="6"/>
+      <a name="dataWidth" val="16"/>
+      <a name="contents">addr/data: 6 16
+a ec10 5 e308 4 ea87
+</a>
     </comp>
     <comp lib="6" loc="(27,155)" name="Text">
       <a name="text" val="0005"/>
@@ -452,22 +440,36 @@
       <a name="text" val="HACK COMPUTER"/>
       <a name="font" val="SansSerif plain 32"/>
     </comp>
+    <comp lib="6" loc="(28,138)" name="Text">
+      <a name="text" val="EC10"/>
+    </comp>
+    <comp lib="6" loc="(158,107)" name="Text">
+      <a name="text" val="Obs: load this into the ROM chip."/>
+    </comp>
+    <comp loc="(530,300)" name="CPU"/>
+    <comp lib="6" loc="(28,209)" name="Text">
+      <a name="text" val="EA87"/>
+    </comp>
+    <comp lib="0" loc="(480,440)" name="Clock"/>
+    <comp lib="0" loc="(370,550)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(180,87)" name="Text">
+      <a name="text" val="Test program - Loading value 10 into RAM's 6th register:"/>
+    </comp>
     <comp lib="6" loc="(27,172)" name="Text">
       <a name="text" val="E308"/>
+    </comp>
+    <comp lib="6" loc="(27,191)" name="Text">
+      <a name="text" val="0004"/>
     </comp>
     <comp lib="6" loc="(221,258)" name="Text">
       <a name="text" val="ROM"/>
       <a name="font" val="SansSerif plain 20"/>
     </comp>
-    <comp lib="4" loc="(290,310)" name="ROM">
-      <a name="addrWidth" val="6"/>
-      <a name="dataWidth" val="16"/>
-      <a name="contents">addr/data: 6 16
-a ec10 5 e308 4 ea87
-</a>
-    </comp>
-    <comp lib="6" loc="(28,138)" name="Text">
-      <a name="text" val="EC10"/>
+    <comp lib="6" loc="(28,121)" name="Text">
+      <a name="text" val="000A"/>
     </comp>
   </circuit>
   <circuit name="main">
