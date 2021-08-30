@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/VitorgsRuffo/Building-The-Hack-Computer">
-    <img src="logo.png" alt="Logo" width="100" height="100">
+    <img src="./Images/logo.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Building the Hack Computer</h3>
@@ -38,7 +38,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![hack-computer](Hack Computer (Logisim)/Images/hack-computer.png)
+![hack-computer](Hack-Computer-(Logisim)/Images/hack-computer.png)
 
 This is a personal project which purpose is to learn computer architecture by implementing the Hack Computer (Noam Nisan and Shimon Schocken. 2008. <i>The Elements of Computing Systems: Building a Modern Computer from First Principles (History of Computing S.)</i>. The MIT Press).
 
@@ -65,20 +65,34 @@ The computer description in HDL can be interpreted and tested by using the softw
 
 1. Open Logisim and inside it open the "hack-computer.circ" file located at "/path/to/repository/Building-The-Hack-Computer/Hack Computer (Logisim)":
 
-![open](./Images/open.png)
+<a href="https://github.com/VitorgsRuffo/Building-The-Hack-Computer">
+    <img src="./Images/open.png" alt="open" width="500" height="500">
+</a>
+
+<br />
 
 2. Click on the Hack Computer chip:
-![chip](./Images/chip.png)
+<a href="https://github.com/VitorgsRuffo/Building-The-Hack-Computer">
+    <img src="./Images/chip.png" alt="chip" width="800" height="500">
+</a>
+
+<br />
 
 3. Go to the Simulate option on Logisim's menu and enable clock ticks:
-![simulate](./Images/simulate.png)
+<a href="https://github.com/VitorgsRuffo/Building-The-Hack-Computer">
+    <img src="./Images/simulate.png" alt="simulate" width="800" height="500">
+</a>
 
 4. The computer will start to run the program that is preloaded in its ROM. After the first four intructions, value 10 gets loaded at RAM's 6th address. The 2 last instructions are there to avoid that the computer runs garbage instructions stored at subsequential ROM addresses, compromising the result of the actual program.
 
-![computer](./Images/computer.png)
+<br />
 
 5. By inspecting RAM chip we can see that the value 10 has actually been loaded at RAM's 6th address.
-![ram](./Images/ram.png)
+<a href="https://github.com/VitorgsRuffo/Building-The-Hack-Computer">
+    <img src="./Images/ram.png" alt="ram" width="800" height="500">
+</a>
+
+<br />
 
 The book's 4th chapter defines the computer machine language. After understanding it you can write machine-level programs, load them into ROM chip and get the computer to run your program. For more information, check out the book.
 
